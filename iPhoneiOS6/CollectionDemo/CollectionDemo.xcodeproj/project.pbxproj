@@ -1,0 +1,369 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		88D1DB851613463F00B33FB9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88D1DB841613463F00B33FB9 /* UIKit.framework */; };
+		88D1DB871613463F00B33FB9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88D1DB861613463F00B33FB9 /* Foundation.framework */; };
+		88D1DB891613463F00B33FB9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88D1DB881613463F00B33FB9 /* CoreGraphics.framework */; };
+		88D1DB8F1613463F00B33FB9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 88D1DB8D1613463F00B33FB9 /* InfoPlist.strings */; };
+		88D1DB911613463F00B33FB9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 88D1DB901613463F00B33FB9 /* main.m */; };
+		88D1DB951613463F00B33FB9 /* CollectionDemoAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 88D1DB941613463F00B33FB9 /* CollectionDemoAppDelegate.m */; };
+		88D1DB971613463F00B33FB9 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 88D1DB961613463F00B33FB9 /* Default.png */; };
+		88D1DB991613463F00B33FB9 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88D1DB981613463F00B33FB9 /* Default@2x.png */; };
+		88D1DB9B1613463F00B33FB9 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88D1DB9A1613463F00B33FB9 /* Default-568h@2x.png */; };
+		88D1DB9E1613463F00B33FB9 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88D1DB9C1613463F00B33FB9 /* MainStoryboard.storyboard */; };
+		88D1DBA9161346B000B33FB9 /* MyCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88D1DBA8161346B000B33FB9 /* MyCollectionViewController.m */; };
+		88D1DBAC1613474000B33FB9 /* MyCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 88D1DBAB1613474000B33FB9 /* MyCollectionViewCell.m */; };
+		88D1DBB91613485000B33FB9 /* chevy_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 88D1DBAD1613485000B33FB9 /* chevy_small.jpg */; };
+		88D1DBBA1613485000B33FB9 /* ford_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 88D1DBAE1613485000B33FB9 /* ford_small.jpg */; };
+		88D1DBBB1613485000B33FB9 /* highlander_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 88D1DBAF1613485000B33FB9 /* highlander_small.jpg */; };
+		88D1DBBC1613485000B33FB9 /* honda_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 88D1DBB01613485000B33FB9 /* honda_small.jpg */; };
+		88D1DBBD1613485000B33FB9 /* jeep_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 88D1DBB11613485000B33FB9 /* jeep_small.jpg */; };
+		88D1DBBE1613485000B33FB9 /* mini_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 88D1DBB21613485000B33FB9 /* mini_small.jpg */; };
+		88D1DBBF1613485000B33FB9 /* nissan_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 88D1DBB31613485000B33FB9 /* nissan_small.jpg */; };
+		88D1DBC01613485000B33FB9 /* rover_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 88D1DBB41613485000B33FB9 /* rover_small.jpg */; };
+		88D1DBC11613485000B33FB9 /* smart_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 88D1DBB51613485000B33FB9 /* smart_small.jpg */; };
+		88D1DBC21613485000B33FB9 /* venza_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 88D1DBB61613485000B33FB9 /* venza_small.jpg */; };
+		88D1DBC31613485000B33FB9 /* volvo_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 88D1DBB71613485000B33FB9 /* volvo_small.jpg */; };
+		88D1DBC41613485000B33FB9 /* vw_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 88D1DBB81613485000B33FB9 /* vw_small.jpg */; };
+		88D1DBC716134B0800B33FB9 /* MySupplementaryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 88D1DBC616134B0800B33FB9 /* MySupplementaryView.m */; };
+		88D1DBCA16134E9600B33FB9 /* MyFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 88D1DBC916134E9600B33FB9 /* MyFlowLayout.m */; };
+		88D1DBCC161350D200B33FB9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88D1DBCB161350D200B33FB9 /* QuartzCore.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		88D1DB801613463F00B33FB9 /* CollectionDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CollectionDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		88D1DB841613463F00B33FB9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		88D1DB861613463F00B33FB9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		88D1DB881613463F00B33FB9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		88D1DB8C1613463F00B33FB9 /* CollectionDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CollectionDemo-Info.plist"; sourceTree = "<group>"; };
+		88D1DB8E1613463F00B33FB9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		88D1DB901613463F00B33FB9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		88D1DB921613463F00B33FB9 /* CollectionDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CollectionDemo-Prefix.pch"; sourceTree = "<group>"; };
+		88D1DB931613463F00B33FB9 /* CollectionDemoAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CollectionDemoAppDelegate.h; sourceTree = "<group>"; };
+		88D1DB941613463F00B33FB9 /* CollectionDemoAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectionDemoAppDelegate.m; sourceTree = "<group>"; };
+		88D1DB961613463F00B33FB9 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		88D1DB981613463F00B33FB9 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		88D1DB9A1613463F00B33FB9 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		88D1DB9D1613463F00B33FB9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		88D1DBA7161346B000B33FB9 /* MyCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyCollectionViewController.h; path = CollectionDemo/MyCollectionViewController.h; sourceTree = "<group>"; };
+		88D1DBA8161346B000B33FB9 /* MyCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyCollectionViewController.m; path = CollectionDemo/MyCollectionViewController.m; sourceTree = "<group>"; };
+		88D1DBAA1613474000B33FB9 /* MyCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyCollectionViewCell.h; path = CollectionDemo/MyCollectionViewCell.h; sourceTree = "<group>"; };
+		88D1DBAB1613474000B33FB9 /* MyCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyCollectionViewCell.m; path = CollectionDemo/MyCollectionViewCell.m; sourceTree = "<group>"; };
+		88D1DBAD1613485000B33FB9 /* chevy_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chevy_small.jpg; sourceTree = "<group>"; };
+		88D1DBAE1613485000B33FB9 /* ford_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ford_small.jpg; sourceTree = "<group>"; };
+		88D1DBAF1613485000B33FB9 /* highlander_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = highlander_small.jpg; sourceTree = "<group>"; };
+		88D1DBB01613485000B33FB9 /* honda_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = honda_small.jpg; sourceTree = "<group>"; };
+		88D1DBB11613485000B33FB9 /* jeep_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = jeep_small.jpg; sourceTree = "<group>"; };
+		88D1DBB21613485000B33FB9 /* mini_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mini_small.jpg; sourceTree = "<group>"; };
+		88D1DBB31613485000B33FB9 /* nissan_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nissan_small.jpg; sourceTree = "<group>"; };
+		88D1DBB41613485000B33FB9 /* rover_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = rover_small.jpg; sourceTree = "<group>"; };
+		88D1DBB51613485000B33FB9 /* smart_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = smart_small.jpg; sourceTree = "<group>"; };
+		88D1DBB61613485000B33FB9 /* venza_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = venza_small.jpg; sourceTree = "<group>"; };
+		88D1DBB71613485000B33FB9 /* volvo_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = volvo_small.jpg; sourceTree = "<group>"; };
+		88D1DBB81613485000B33FB9 /* vw_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = vw_small.jpg; sourceTree = "<group>"; };
+		88D1DBC516134B0800B33FB9 /* MySupplementaryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MySupplementaryView.h; path = CollectionDemo/MySupplementaryView.h; sourceTree = "<group>"; };
+		88D1DBC616134B0800B33FB9 /* MySupplementaryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MySupplementaryView.m; path = CollectionDemo/MySupplementaryView.m; sourceTree = "<group>"; };
+		88D1DBC816134E9600B33FB9 /* MyFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyFlowLayout.h; sourceTree = "<group>"; };
+		88D1DBC916134E9600B33FB9 /* MyFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyFlowLayout.m; sourceTree = "<group>"; };
+		88D1DBCB161350D200B33FB9 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		88D1DB7D1613463F00B33FB9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88D1DBCC161350D200B33FB9 /* QuartzCore.framework in Frameworks */,
+				88D1DB851613463F00B33FB9 /* UIKit.framework in Frameworks */,
+				88D1DB871613463F00B33FB9 /* Foundation.framework in Frameworks */,
+				88D1DB891613463F00B33FB9 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		88D1DB751613463F00B33FB9 = {
+			isa = PBXGroup;
+			children = (
+				88D1DBCB161350D200B33FB9 /* QuartzCore.framework */,
+				88D1DBC516134B0800B33FB9 /* MySupplementaryView.h */,
+				88D1DBC616134B0800B33FB9 /* MySupplementaryView.m */,
+				88D1DBAA1613474000B33FB9 /* MyCollectionViewCell.h */,
+				88D1DBAB1613474000B33FB9 /* MyCollectionViewCell.m */,
+				88D1DBA7161346B000B33FB9 /* MyCollectionViewController.h */,
+				88D1DBA8161346B000B33FB9 /* MyCollectionViewController.m */,
+				88D1DB8A1613463F00B33FB9 /* CollectionDemo */,
+				88D1DB831613463F00B33FB9 /* Frameworks */,
+				88D1DB811613463F00B33FB9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		88D1DB811613463F00B33FB9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				88D1DB801613463F00B33FB9 /* CollectionDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		88D1DB831613463F00B33FB9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				88D1DB841613463F00B33FB9 /* UIKit.framework */,
+				88D1DB861613463F00B33FB9 /* Foundation.framework */,
+				88D1DB881613463F00B33FB9 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		88D1DB8A1613463F00B33FB9 /* CollectionDemo */ = {
+			isa = PBXGroup;
+			children = (
+				88D1DB931613463F00B33FB9 /* CollectionDemoAppDelegate.h */,
+				88D1DB941613463F00B33FB9 /* CollectionDemoAppDelegate.m */,
+				88D1DB9C1613463F00B33FB9 /* MainStoryboard.storyboard */,
+				88D1DBC816134E9600B33FB9 /* MyFlowLayout.h */,
+				88D1DBC916134E9600B33FB9 /* MyFlowLayout.m */,
+				88D1DB8B1613463F00B33FB9 /* Supporting Files */,
+			);
+			path = CollectionDemo;
+			sourceTree = "<group>";
+		};
+		88D1DB8B1613463F00B33FB9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				88D1DBAD1613485000B33FB9 /* chevy_small.jpg */,
+				88D1DBAE1613485000B33FB9 /* ford_small.jpg */,
+				88D1DBAF1613485000B33FB9 /* highlander_small.jpg */,
+				88D1DBB01613485000B33FB9 /* honda_small.jpg */,
+				88D1DBB11613485000B33FB9 /* jeep_small.jpg */,
+				88D1DBB21613485000B33FB9 /* mini_small.jpg */,
+				88D1DBB31613485000B33FB9 /* nissan_small.jpg */,
+				88D1DBB41613485000B33FB9 /* rover_small.jpg */,
+				88D1DBB51613485000B33FB9 /* smart_small.jpg */,
+				88D1DBB61613485000B33FB9 /* venza_small.jpg */,
+				88D1DBB71613485000B33FB9 /* volvo_small.jpg */,
+				88D1DBB81613485000B33FB9 /* vw_small.jpg */,
+				88D1DB8C1613463F00B33FB9 /* CollectionDemo-Info.plist */,
+				88D1DB8D1613463F00B33FB9 /* InfoPlist.strings */,
+				88D1DB901613463F00B33FB9 /* main.m */,
+				88D1DB921613463F00B33FB9 /* CollectionDemo-Prefix.pch */,
+				88D1DB961613463F00B33FB9 /* Default.png */,
+				88D1DB981613463F00B33FB9 /* Default@2x.png */,
+				88D1DB9A1613463F00B33FB9 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		88D1DB7F1613463F00B33FB9 /* CollectionDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 88D1DBA41613463F00B33FB9 /* Build configuration list for PBXNativeTarget "CollectionDemo" */;
+			buildPhases = (
+				88D1DB7C1613463F00B33FB9 /* Sources */,
+				88D1DB7D1613463F00B33FB9 /* Frameworks */,
+				88D1DB7E1613463F00B33FB9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CollectionDemo;
+			productName = CollectionDemo;
+			productReference = 88D1DB801613463F00B33FB9 /* CollectionDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		88D1DB771613463F00B33FB9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = CollectionDemo;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Neil Smyth";
+			};
+			buildConfigurationList = 88D1DB7A1613463F00B33FB9 /* Build configuration list for PBXProject "CollectionDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 88D1DB751613463F00B33FB9;
+			productRefGroup = 88D1DB811613463F00B33FB9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				88D1DB7F1613463F00B33FB9 /* CollectionDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		88D1DB7E1613463F00B33FB9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88D1DB8F1613463F00B33FB9 /* InfoPlist.strings in Resources */,
+				88D1DB971613463F00B33FB9 /* Default.png in Resources */,
+				88D1DB991613463F00B33FB9 /* Default@2x.png in Resources */,
+				88D1DB9B1613463F00B33FB9 /* Default-568h@2x.png in Resources */,
+				88D1DB9E1613463F00B33FB9 /* MainStoryboard.storyboard in Resources */,
+				88D1DBB91613485000B33FB9 /* chevy_small.jpg in Resources */,
+				88D1DBBA1613485000B33FB9 /* ford_small.jpg in Resources */,
+				88D1DBBB1613485000B33FB9 /* highlander_small.jpg in Resources */,
+				88D1DBBC1613485000B33FB9 /* honda_small.jpg in Resources */,
+				88D1DBBD1613485000B33FB9 /* jeep_small.jpg in Resources */,
+				88D1DBBE1613485000B33FB9 /* mini_small.jpg in Resources */,
+				88D1DBBF1613485000B33FB9 /* nissan_small.jpg in Resources */,
+				88D1DBC01613485000B33FB9 /* rover_small.jpg in Resources */,
+				88D1DBC11613485000B33FB9 /* smart_small.jpg in Resources */,
+				88D1DBC21613485000B33FB9 /* venza_small.jpg in Resources */,
+				88D1DBC31613485000B33FB9 /* volvo_small.jpg in Resources */,
+				88D1DBC41613485000B33FB9 /* vw_small.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		88D1DB7C1613463F00B33FB9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88D1DB911613463F00B33FB9 /* main.m in Sources */,
+				88D1DB951613463F00B33FB9 /* CollectionDemoAppDelegate.m in Sources */,
+				88D1DBA9161346B000B33FB9 /* MyCollectionViewController.m in Sources */,
+				88D1DBAC1613474000B33FB9 /* MyCollectionViewCell.m in Sources */,
+				88D1DBC716134B0800B33FB9 /* MySupplementaryView.m in Sources */,
+				88D1DBCA16134E9600B33FB9 /* MyFlowLayout.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		88D1DB8D1613463F00B33FB9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				88D1DB8E1613463F00B33FB9 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		88D1DB9C1613463F00B33FB9 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				88D1DB9D1613463F00B33FB9 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		88D1DBA21613463F00B33FB9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		88D1DBA31613463F00B33FB9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		88D1DBA51613463F00B33FB9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CollectionDemo/CollectionDemo-Prefix.pch";
+				INFOPLIST_FILE = "CollectionDemo/CollectionDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		88D1DBA61613463F00B33FB9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CollectionDemo/CollectionDemo-Prefix.pch";
+				INFOPLIST_FILE = "CollectionDemo/CollectionDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		88D1DB7A1613463F00B33FB9 /* Build configuration list for PBXProject "CollectionDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88D1DBA21613463F00B33FB9 /* Debug */,
+				88D1DBA31613463F00B33FB9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		88D1DBA41613463F00B33FB9 /* Build configuration list for PBXNativeTarget "CollectionDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88D1DBA51613463F00B33FB9 /* Debug */,
+				88D1DBA61613463F00B33FB9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 88D1DB771613463F00B33FB9 /* Project object */;
+}

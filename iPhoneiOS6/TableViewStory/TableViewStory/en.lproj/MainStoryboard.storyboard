@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2840" systemVersion="11E53" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="xRe-7T-4Q4">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1926"/>
+    </dependencies>
+    <scenes>
+        <!--Car Table View Controller - Cars-->
+        <scene sceneID="xBr-63-SOS">
+            <objects>
+                <tableViewController id="MVi-Rg-Mme" customClass="CarTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="fii-Rd-0dw">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="carTableCell" id="RWV-lQ-XQL" customClass="CarTableViewCell">
+                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="300" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GZS-6m-Cwa">
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </label>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YGK-IY-hPZ">
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Jb-Qn-chZ">
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="34" id="3O0-ia-b7C"/>
+                                                <constraint firstAttribute="width" constant="50" id="r1g-yz-coP"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <constraints>
+                                    <constraint firstItem="GZS-6m-Cwa" firstAttribute="leading" secondItem="RWV-lQ-XQL" secondAttribute="leading" constant="68" id="9WY-Az-YwE"/>
+                                    <constraint firstItem="YGK-IY-hPZ" firstAttribute="top" secondItem="RWV-lQ-XQL" secondAttribute="top" constant="20" type="default" id="QW5-su-wWS"/>
+                                    <constraint firstItem="GZS-6m-Cwa" firstAttribute="top" secondItem="RWV-lQ-XQL" secondAttribute="top" constant="2" id="Qct-qd-dsP"/>
+                                    <constraint firstItem="2Jb-Qn-chZ" firstAttribute="centerY" secondItem="RWV-lQ-XQL" secondAttribute="centerY" type="default" id="bVs-th-3bC"/>
+                                    <constraint firstItem="GZS-6m-Cwa" firstAttribute="leading" secondItem="YGK-IY-hPZ" secondAttribute="leading" type="default" id="cIB-Zx-GvY"/>
+                                    <constraint firstItem="2Jb-Qn-chZ" firstAttribute="leading" secondItem="RWV-lQ-XQL" secondAttribute="leading" constant="8" id="vfq-hY-hr3"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="carImage" destination="2Jb-Qn-chZ" id="QcE-DH-zPz"/>
+                                    <outlet property="makeLabel" destination="GZS-6m-Cwa" id="FHe-MS-A02"/>
+                                    <outlet property="modelLabel" destination="YGK-IY-hPZ" id="iAj-1d-7LT"/>
+                                    <segue destination="dpt-3f-tHN" kind="push" identifier="ShowCarDetails" id="4YX-zQ-f89"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="MVi-Rg-Mme" id="eP2-qV-mil"/>
+                            <outlet property="delegate" destination="MVi-Rg-Mme" id="WOe-7T-ui7"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Cars" id="bbd-Cb-TJ0"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lod-26-fnK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="605" y="41"/>
+        </scene>
+        <!--Car Detail View Controller - Car Details-->
+        <scene sceneID="Vh8-kV-Gpl">
+            <objects>
+                <viewController id="dpt-3f-tHN" customClass="CarDetailViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1OT-nu-WkJ">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Make" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Keh-Wz-xQU">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="51" id="pm0-TN-Co4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Model" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4w1-V2-S4V">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="56" id="0Ah-s9-iHn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hMY-Bc-NDN">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="852-QJ-MeC">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OBB-jM-Ezx">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="227" id="HlQ-Sm-E7g"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="4w1-V2-S4V" firstAttribute="top" secondItem="1OT-nu-WkJ" secondAttribute="top" constant="85" id="6W6-DD-TLR"/>
+                            <constraint firstItem="4w1-V2-S4V" firstAttribute="trailing" secondItem="Keh-Wz-xQU" secondAttribute="trailing" type="default" id="K46-nQ-xEa"/>
+                            <constraint firstAttribute="trailing" secondItem="hMY-Bc-NDN" secondAttribute="trailing" constant="102" id="KkC-c8-0Pr"/>
+                            <constraint firstItem="OBB-jM-Ezx" firstAttribute="leading" secondItem="1OT-nu-WkJ" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="QaS-Ad-l0W"/>
+                            <constraint firstAttribute="bottom" secondItem="OBB-jM-Ezx" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="Whs-M8-0iW"/>
+                            <constraint firstItem="852-QJ-MeC" firstAttribute="baseline" secondItem="4w1-V2-S4V" secondAttribute="baseline" type="default" id="d3K-Eu-Jwp"/>
+                            <constraint firstItem="852-QJ-MeC" firstAttribute="leading" secondItem="hMY-Bc-NDN" secondAttribute="leading" type="default" id="dlD-jl-nRW"/>
+                            <constraint firstItem="Keh-Wz-xQU" firstAttribute="top" secondItem="1OT-nu-WkJ" secondAttribute="top" constant="39" id="jM7-HG-uWB"/>
+                            <constraint firstItem="4w1-V2-S4V" firstAttribute="leading" secondItem="1OT-nu-WkJ" secondAttribute="leading" constant="81" id="l2v-9o-Te5"/>
+                            <constraint firstItem="hMY-Bc-NDN" firstAttribute="baseline" secondItem="Keh-Wz-xQU" secondAttribute="baseline" type="default" id="ya2-PH-5dE"/>
+                            <constraint firstAttribute="trailing" secondItem="OBB-jM-Ezx" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="yg1-2n-JAq"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Car Details" id="3xf-0Y-i6A"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="imageView" destination="OBB-jM-Ezx" id="WPZ-yE-Iz2"/>
+                        <outlet property="makeLabel" destination="hMY-Bc-NDN" id="3sl-Wx-VGq"/>
+                        <outlet property="modelLabel" destination="852-QJ-MeC" id="jMa-UD-cSr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ptD-35-hsN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="978" y="38"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="l47-5M-8Ao">
+            <objects>
+                <navigationController id="xRe-7T-4Q4" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Bu9-2z-Dhb">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="MVi-Rg-Mme" kind="relationship" relationship="rootViewController" id="cBf-d4-VJ8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HmQ-qG-U4j" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="79" y="41"/>
+        </scene>
+    </scenes>
+    <classes>
+        <class className="CarDetailViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CarDetailViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="imageView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="makeLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="modelLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="CarTableViewCell" superclassName="UITableViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CarTableViewCell.h"/>
+            <relationships>
+                <relationship kind="outlet" name="carImage" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="makeLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="modelLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="CarTableViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CarTableViewController.h"/>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

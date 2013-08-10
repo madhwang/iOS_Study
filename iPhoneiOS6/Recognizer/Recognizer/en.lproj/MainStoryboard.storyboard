@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2840" systemVersion="11E53" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1926"/>
+    </dependencies>
+    <scenes>
+        <!--Recognizer View Controller-->
+        <scene sceneID="5">
+            <objects>
+                <viewController id="2" customClass="RecognizerViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g7h-CZ-1WX">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="hPx-qN-ivu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="g7h-CZ-1WX" firstAttribute="top" secondItem="3" secondAttribute="top" constant="263" id="32m-pR-BnY"/>
+                            <constraint firstItem="g7h-CZ-1WX" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="4wN-gI-uau"/>
+                            <constraint firstAttribute="trailing" secondItem="g7h-CZ-1WX" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="aR9-u2-lMv"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="oib-tq-GLs" appends="YES" id="o2V-uB-E66"/>
+                            <outletCollection property="gestureRecognizers" destination="Zhv-dP-f9X" appends="YES" id="3Ga-Hs-dfB"/>
+                            <outletCollection property="gestureRecognizers" destination="oV2-kH-7FP" appends="YES" id="uZu-WF-sr5"/>
+                            <outletCollection property="gestureRecognizers" destination="alD-UG-JNQ" appends="YES" id="IVT-LV-UgP"/>
+                            <outletCollection property="gestureRecognizers" destination="4fL-8Z-6uB" appends="YES" id="Ugj-P0-KMb"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="statusLabel" destination="g7h-CZ-1WX" id="YSg-d7-gKP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer numberOfTapsRequired="2" id="oib-tq-GLs">
+                    <connections>
+                        <action selector="tapDetected:" destination="2" id="goZ-Wd-FVA"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <pinchGestureRecognizer id="Zhv-dP-f9X">
+                    <connections>
+                        <action selector="pinchDetected:" destination="2" id="pWX-fp-qxe"/>
+                    </connections>
+                </pinchGestureRecognizer>
+                <rotationGestureRecognizer id="oV2-kH-7FP">
+                    <connections>
+                        <action selector="rotationDetected:" destination="2" id="LdN-jW-5OH"/>
+                    </connections>
+                </rotationGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="alD-UG-JNQ">
+                    <connections>
+                        <action selector="swipeDetected:" destination="2" id="WdQ-Wp-DlB"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="3.0000000000000013" id="4fL-8Z-6uB">
+                    <connections>
+                        <action selector="longPressDetected:" destination="2" id="LVP-jC-GAf"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+            </objects>
+        </scene>
+    </scenes>
+    <classes>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="RecognizerViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/RecognizerViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="longPressDetected:" candidateClass="UILongPressGestureRecognizer"/>
+                <relationship kind="action" name="pinchDetected:" candidateClass="UIPinchGestureRecognizer"/>
+                <relationship kind="action" name="rotationDetected:" candidateClass="UIRotationGestureRecognizer"/>
+                <relationship kind="action" name="swipeDetected:" candidateClass="UISwipeGestureRecognizer"/>
+                <relationship kind="action" name="tapDetected:" candidateClass="UITapGestureRecognizer"/>
+                <relationship kind="outlet" name="statusLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
