@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface UnitConverterViewController : UIViewController
-
+@property (strong,nonatomic) IBOutlet UILabel *resultLabel;
+@property (strong,nonatomic) IBOutlet UITextField *tempText;
+-(IBAction)convertTemp:(id)sender;
 @end

@@ -7,11 +7,12 @@
 //
 
 #import "UnitConverterViewController.h"
-
+/*
 @interface UnitConverterViewController ()
 
-@end
 
+@end
+*/
 @implementation UnitConverterViewController
 
 - (void)viewDidLoad
@@ -26,4 +27,12 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)convertTemp:(id)sender
+{
+    double farenheit = [_tempText.text doubleValue];
+    double celsius = (farenheit - 32) / 1.8;
+    
+    NSString *resultString = [[NSString alloc]initWithFormat:@"Celsius %f",celsius];
+    _resultLabel.text = resultString;
+}
 @end
