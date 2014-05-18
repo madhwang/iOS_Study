@@ -1,0 +1,306 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		911C011317D1D64F00B6EBEB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 911C011217D1D64F00B6EBEB /* UIKit.framework */; };
+		911C011517D1D64F00B6EBEB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 911C011417D1D64F00B6EBEB /* Foundation.framework */; };
+		911C011717D1D64F00B6EBEB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 911C011617D1D64F00B6EBEB /* CoreGraphics.framework */; };
+		911C011D17D1D64F00B6EBEB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 911C011B17D1D64F00B6EBEB /* InfoPlist.strings */; };
+		911C011F17D1D64F00B6EBEB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 911C011E17D1D64F00B6EBEB /* main.m */; };
+		911C012317D1D64F00B6EBEB /* AssistantEditorAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 911C012217D1D64F00B6EBEB /* AssistantEditorAppDelegate.m */; };
+		911C012517D1D64F00B6EBEB /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 911C012417D1D64F00B6EBEB /* Default.png */; };
+		911C012717D1D64F00B6EBEB /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 911C012617D1D64F00B6EBEB /* Default@2x.png */; };
+		911C012917D1D64F00B6EBEB /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 911C012817D1D64F00B6EBEB /* Default-568h@2x.png */; };
+		911C012C17D1D64F00B6EBEB /* AssistantEditorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 911C012B17D1D64F00B6EBEB /* AssistantEditorViewController.m */; };
+		911C012F17D1D64F00B6EBEB /* AssistantEditorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 911C012D17D1D64F00B6EBEB /* AssistantEditorViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		911C010F17D1D64F00B6EBEB /* AssistantEditor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AssistantEditor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		911C011217D1D64F00B6EBEB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		911C011417D1D64F00B6EBEB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		911C011617D1D64F00B6EBEB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		911C011A17D1D64F00B6EBEB /* AssistantEditor-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AssistantEditor-Info.plist"; sourceTree = "<group>"; };
+		911C011C17D1D64F00B6EBEB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		911C011E17D1D64F00B6EBEB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		911C012017D1D64F00B6EBEB /* AssistantEditor-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AssistantEditor-Prefix.pch"; sourceTree = "<group>"; };
+		911C012117D1D64F00B6EBEB /* AssistantEditorAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AssistantEditorAppDelegate.h; sourceTree = "<group>"; };
+		911C012217D1D64F00B6EBEB /* AssistantEditorAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AssistantEditorAppDelegate.m; sourceTree = "<group>"; };
+		911C012417D1D64F00B6EBEB /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		911C012617D1D64F00B6EBEB /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		911C012817D1D64F00B6EBEB /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		911C012A17D1D64F00B6EBEB /* AssistantEditorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AssistantEditorViewController.h; sourceTree = "<group>"; };
+		911C012B17D1D64F00B6EBEB /* AssistantEditorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AssistantEditorViewController.m; sourceTree = "<group>"; };
+		911C012E17D1D64F00B6EBEB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/AssistantEditorViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		911C010C17D1D64F00B6EBEB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				911C011317D1D64F00B6EBEB /* UIKit.framework in Frameworks */,
+				911C011517D1D64F00B6EBEB /* Foundation.framework in Frameworks */,
+				911C011717D1D64F00B6EBEB /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		911C010617D1D64F00B6EBEB = {
+			isa = PBXGroup;
+			children = (
+				911C011817D1D64F00B6EBEB /* AssistantEditor */,
+				911C011117D1D64F00B6EBEB /* Frameworks */,
+				911C011017D1D64F00B6EBEB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		911C011017D1D64F00B6EBEB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				911C010F17D1D64F00B6EBEB /* AssistantEditor.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		911C011117D1D64F00B6EBEB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				911C011217D1D64F00B6EBEB /* UIKit.framework */,
+				911C011417D1D64F00B6EBEB /* Foundation.framework */,
+				911C011617D1D64F00B6EBEB /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		911C011817D1D64F00B6EBEB /* AssistantEditor */ = {
+			isa = PBXGroup;
+			children = (
+				911C012117D1D64F00B6EBEB /* AssistantEditorAppDelegate.h */,
+				911C012217D1D64F00B6EBEB /* AssistantEditorAppDelegate.m */,
+				911C012A17D1D64F00B6EBEB /* AssistantEditorViewController.h */,
+				911C012B17D1D64F00B6EBEB /* AssistantEditorViewController.m */,
+				911C012D17D1D64F00B6EBEB /* AssistantEditorViewController.xib */,
+				911C011917D1D64F00B6EBEB /* Supporting Files */,
+			);
+			path = AssistantEditor;
+			sourceTree = "<group>";
+		};
+		911C011917D1D64F00B6EBEB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				911C011A17D1D64F00B6EBEB /* AssistantEditor-Info.plist */,
+				911C011B17D1D64F00B6EBEB /* InfoPlist.strings */,
+				911C011E17D1D64F00B6EBEB /* main.m */,
+				911C012017D1D64F00B6EBEB /* AssistantEditor-Prefix.pch */,
+				911C012417D1D64F00B6EBEB /* Default.png */,
+				911C012617D1D64F00B6EBEB /* Default@2x.png */,
+				911C012817D1D64F00B6EBEB /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		911C010E17D1D64F00B6EBEB /* AssistantEditor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 911C013217D1D64F00B6EBEB /* Build configuration list for PBXNativeTarget "AssistantEditor" */;
+			buildPhases = (
+				911C010B17D1D64F00B6EBEB /* Sources */,
+				911C010C17D1D64F00B6EBEB /* Frameworks */,
+				911C010D17D1D64F00B6EBEB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AssistantEditor;
+			productName = AssistantEditor;
+			productReference = 911C010F17D1D64F00B6EBEB /* AssistantEditor.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		911C010717D1D64F00B6EBEB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = AssistantEditor;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = madhwang;
+			};
+			buildConfigurationList = 911C010A17D1D64F00B6EBEB /* Build configuration list for PBXProject "AssistantEditor" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 911C010617D1D64F00B6EBEB;
+			productRefGroup = 911C011017D1D64F00B6EBEB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				911C010E17D1D64F00B6EBEB /* AssistantEditor */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		911C010D17D1D64F00B6EBEB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				911C011D17D1D64F00B6EBEB /* InfoPlist.strings in Resources */,
+				911C012517D1D64F00B6EBEB /* Default.png in Resources */,
+				911C012717D1D64F00B6EBEB /* Default@2x.png in Resources */,
+				911C012917D1D64F00B6EBEB /* Default-568h@2x.png in Resources */,
+				911C012F17D1D64F00B6EBEB /* AssistantEditorViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		911C010B17D1D64F00B6EBEB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				911C011F17D1D64F00B6EBEB /* main.m in Sources */,
+				911C012317D1D64F00B6EBEB /* AssistantEditorAppDelegate.m in Sources */,
+				911C012C17D1D64F00B6EBEB /* AssistantEditorViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		911C011B17D1D64F00B6EBEB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				911C011C17D1D64F00B6EBEB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		911C012D17D1D64F00B6EBEB /* AssistantEditorViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				911C012E17D1D64F00B6EBEB /* en */,
+			);
+			name = AssistantEditorViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		911C013017D1D64F00B6EBEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		911C013117D1D64F00B6EBEB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		911C013317D1D64F00B6EBEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AssistantEditor/AssistantEditor-Prefix.pch";
+				INFOPLIST_FILE = "AssistantEditor/AssistantEditor-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		911C013417D1D64F00B6EBEB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AssistantEditor/AssistantEditor-Prefix.pch";
+				INFOPLIST_FILE = "AssistantEditor/AssistantEditor-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		911C010A17D1D64F00B6EBEB /* Build configuration list for PBXProject "AssistantEditor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				911C013017D1D64F00B6EBEB /* Debug */,
+				911C013117D1D64F00B6EBEB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		911C013217D1D64F00B6EBEB /* Build configuration list for PBXNativeTarget "AssistantEditor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				911C013317D1D64F00B6EBEB /* Debug */,
+				911C013417D1D64F00B6EBEB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 911C010717D1D64F00B6EBEB /* Project object */;
+}
