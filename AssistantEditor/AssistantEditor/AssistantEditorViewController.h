@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface AssistantEditorViewController : UIViewController
+@property (strong, nonatomic) IBOutlet UILabel *statusLabel;
+- (IBAction)butonTouched;
 
 @end
