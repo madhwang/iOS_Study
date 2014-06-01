@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>FA12786E-98F3-4526-8123-BE515C3FEE92</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Timecard</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>13919857-5522-42BF-BA23-C94CD079213D</key>
+		<string>https://github.com/madhwang/iOS_Study.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Timecard.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>13919857-5522-42BF-BA23-C94CD079213D</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/madhwang/iOS_Study.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>13919857-5522-42BF-BA23-C94CD079213D</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>13919857-5522-42BF-BA23-C94CD079213D</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Timecard</string>
+		</dict>
+	</array>
+</dict>
+</plist>

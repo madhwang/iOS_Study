@@ -26,4 +26,7 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)butonTouched {
+    _statusLabel.text = @"Hello2";
+}
 @end

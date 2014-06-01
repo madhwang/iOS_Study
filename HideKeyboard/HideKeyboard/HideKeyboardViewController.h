@@ -10,4 +10,10 @@
 
 @interface HideKeyboardViewController : UIViewController
 
+
+@property (strong,nonatomic) IBOutlet UITextField *textField;
+
+-(IBAction)textFieldReturn:(id)sender;
+
+-(IBAction)backgroundTouched:(id)sender;
 @end

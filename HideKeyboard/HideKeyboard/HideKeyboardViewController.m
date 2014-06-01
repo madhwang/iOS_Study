@@ -8,9 +8,6 @@
 
 #import "HideKeyboardViewController.h"
 
-@interface HideKeyboardViewController ()
-
-@end
 
 @implementation HideKeyboardViewController
 
@@ -26,4 +23,14 @@
     // Dispose of any resources that can be recreated.
 }
 
+
+-(IBAction)textFieldReturn:(id)sender
+{
+    [sender resignFirstResponder];
+}
+
+-(IBAction)backgroundTouched:(id)sender
+{
+    [_textField resignFirstResponder];
+}
 @end

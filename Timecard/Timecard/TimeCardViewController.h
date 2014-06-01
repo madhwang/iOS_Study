@@ -10,4 +10,12 @@
 
 @interface TimeCardViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UITextField *memberNo;
+
+@property (weak, nonatomic) IBOutlet UITextField *password;
+
+- (IBAction) textFieldReturn:(id)sender;
+
+- (IBAction) backgroundTouched:(id)sender;
+
 @end

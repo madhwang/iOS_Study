@@ -14,16 +14,16 @@
 
 @implementation TimeCardViewController
 
-- (void)viewDidLoad
+/* 엔터키 클릭시 키보드 숨김 */
+-(IBAction) textFieldReturn:(id)sender
 {
-    [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    [sender resignFirstResponder];
 }
 
-- (void)didReceiveMemoryWarning
+/* 백그라운드 클릭시 키보드 숨김 */
+- (IBAction) backgroundTouched:(id)sender
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    [_memberNo resignFirstResponder];
+    [_password resignFirstResponder];
 }
-
 @end
