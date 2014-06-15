@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9159BEB0194DADBF00BAA396 /* TimeCardInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9159BEAF194DADBF00BAA396 /* TimeCardInfoViewController.m */; };
 		91C56A2C1928AB7900B933FA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91C56A2B1928AB7900B933FA /* Foundation.framework */; };
 		91C56A2E1928AB7900B933FA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91C56A2D1928AB7900B933FA /* CoreGraphics.framework */; };
 		91C56A301928AB7900B933FA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91C56A2F1928AB7900B933FA /* UIKit.framework */; };
@@ -34,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9159BEAE194DADBF00BAA396 /* TimeCardInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeCardInfoViewController.h; sourceTree = "<group>"; };
+		9159BEAF194DADBF00BAA396 /* TimeCardInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeCardInfoViewController.m; sourceTree = "<group>"; };
 		91C56A281928AB7900B933FA /* Timecard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Timecard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91C56A2B1928AB7900B933FA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		91C56A2D1928AB7900B933FA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -115,6 +118,8 @@
 				91C56A3A1928AB7900B933FA /* TimeCardAppDelegate.h */,
 				91C56A3B1928AB7900B933FA /* TimeCardAppDelegate.m */,
 				91C56A3D1928AB7900B933FA /* Main.storyboard */,
+				9159BEAE194DADBF00BAA396 /* TimeCardInfoViewController.h */,
+				9159BEAF194DADBF00BAA396 /* TimeCardInfoViewController.m */,
 				91C56A401928AB7900B933FA /* TimeCardViewController.h */,
 				91C56A411928AB7900B933FA /* TimeCardViewController.m */,
 				91C56A431928AB7900B933FA /* Images.xcassets */,
@@ -253,6 +258,7 @@
 				91C56A421928AB7900B933FA /* TimeCardViewController.m in Sources */,
 				91C56A381928AB7900B933FA /* main.m in Sources */,
 				91C56A3C1928AB7900B933FA /* TimeCardAppDelegate.m in Sources */,
+				9159BEB0194DADBF00BAA396 /* TimeCardInfoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -457,6 +463,7 @@
 				91C56A5C1928AB7900B933FA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		91C56A5D1928AB7900B933FA /* Build configuration list for PBXNativeTarget "TimecardTests" */ = {
 			isa = XCConfigurationList;
@@ -465,6 +472,7 @@
 				91C56A5F1928AB7900B933FA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
