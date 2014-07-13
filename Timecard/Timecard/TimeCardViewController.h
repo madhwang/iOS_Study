@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TimeCardInfoViewController.h"
 
 @interface TimeCardViewController : UIViewController
 
@@ -15,7 +16,7 @@
 
 
 @property (retain, nonatomic) NSURLConnection *connection;
-@property (retain, nonatomic) NSMutableData *receivedData;
+@property (retain, nonatomic) NSString *receivedResult;
 
 
 /* 엔터 클릭시 키보드 숨김 */
@@ -25,7 +26,9 @@
 - (IBAction) backgroundTouched:(id)sender;
 
 /* 인증하기 버튼 터치시 */
-- (IBAction) authConfirmBtnTouched:(id)sender;
+//- (IBAction) authConfirmBtnTouched:(id)sender;
+
+
 
 
 -(void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data;

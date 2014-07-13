@@ -10,4 +10,7 @@
 
 @interface TimeCardInfoViewController : UIViewController
 
+
+@property (strong,nonatomic) NSString *loginMemberNo;
+
 @end

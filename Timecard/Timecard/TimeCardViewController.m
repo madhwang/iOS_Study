@@ -27,7 +27,9 @@
 
 
 -(void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data{
-    [_receivedData appendData:data];
+    
+    _receivedResult = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+    
 }
 
 /*
@@ -43,23 +45,17 @@
  */
 -(void)connectionDidFinishLoading:(NSURLConnection *)connection{
     
-    //initialize convert the received data to string with UTF8 encoding
-    NSString *htmlSTR = [[NSString alloc] initWithData:self.receivedData
-                                              encoding:NSUTF8StringEncoding];
-
-    if([htmlSTR isEqualToString:@"OK"] == true)
-    {
-        // 화면 이동
-        //멤버 번호를 가지고 이동
-    }
+    NSLog(@"%@" , self.receivedResult);
     
-   
 }
 
-
--(IBAction) authConfirmBtnTouched:(id)sender
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://localhost:8080/authConfirm?memberNo=%@&passwd=%@",_memberNo,_password]];
+    
+
+//-(IBAction) authConfirmBtnTouched:(id)sender
+//{
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://localhost:8080/timecard/api/auth/authConfirm?memberNo=%@&passwd=%@",_memberNo,_password]];
     
     
     //initialize a request from url
@@ -72,5 +68,16 @@
     
     //start the connection
     [connection start];
+    
+    /* 
+     결과값이 OK이면 다음 페이지로 이동한다.
+    */
+
+   /* if([_receivedResult isEqualToString:@"OK"])
+    {
+        TimeCardInfoViewController *dest = [segue destinationViewController];
+        dest.loginMemberNo = _memberNo.text ;
+    }
+    */
 }
 @end
